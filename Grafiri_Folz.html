@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_Grafity_Folz.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Graviti Folz</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-image: url(https://phonoteka.org/uploads/posts/2021-05/1621549311_23-phonoteka_org-p-graviti-fon-32.jpg);
+            background-position: left bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="full-screen" >
+            <div class="full-screen-body">
+                <div class="full-screen-title">
+                    ГРАВИТИ ФОЛЗ
+                </div>
+            </div>
+
+            <video autoplay muted loop preload="auto" class="full-screen-video">
+            <source type="video/mp4" src="video/gravitiFolz.mp4">
+            </video>
+        </div>
+    </header>
+
+    <nav >  
+        <img src="img/Graviti_Folz/logonorm.png" width="150" height="118"/>  
+        <input type="checkbox" name="menu" id="btn-menu" />
+        <label for="btn-menu"><strong>Меню</strong> </label> 
+        <ul>
+            <li> <a id="one" href="#1"><h3>Основные персонажи</h3> </a> </li>
+            <li> <a id="two" href="#2"><h3>Второстепенные персонажи</h3> </a> </li>
+            <li> <a id="tree" href="#3"><h3>Объекты</h3> </a> </li>
+            <li> <a id="tree" href="index.html"><h3>Главная</h3> </a> </li>
+            <li><a href="Graviti-Galary.html"><h3>Галерея</h3></a></li>
+            <li>
+                <div class="search">
+                    <input type="text" class="fild" id="inputSearch" placeholder="Поиск.." >
+                    <ul id="list">
+                            <li><a href="#q">Диппер Пайнс</a></li>
+                            <li><a href="#w">Мэйбл Пайнс</a></li>
+                            <li><a href="#e">Стенли Пайнс</a></li>
+                            <li><a href="#r">Зус Рамирез</a></li>
+                            <li><a href="#t">Венди Кордрой</a></li>
+                            <li><a href="#y">Билл Шифр</a></li>
+                            <li><a href="#u">Боби Блапс</a></li>
+                            <li><a href="#i">Гидеон Глифул</a></li>
+                            <li><a href="#o">Гренда Грендинатор</a></li>
+                            <li><a href="#p">Кэнди Чиу</a></li>
+                            <li><a href="#a">Пасифика Нортвест</a></li>
+                            <li><a href="#v">Вселенский портал</a></li>
+                            <li><a href="#d">Питт Кола</a></li>
+                            <li><a href="#f">Дневник № 3</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="all_main">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!--
+                <div class="panel left">
+
+                <div class="ch" style="--i:1;">
+                    <div class="portalRik" style="--i:1;"><img src="img/Graviti_Folz/book-transformed.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:2;">
+                    <div class="portalRik b" style="--i:2;"><img src="img/Graviti_Folz/Dipper.png" style="width: 50%;height: 50%;" alt=""></div>
+                </div>
+                <div class="ch" style="--i:3;">
+                    <div class="portalRik c" style="--i:3;"><img src="img/Graviti_Folz/Maibl.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:4;">
+                    <div class="portalRik" style="--i:4;"><img src="img/icons_geroes/summer.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:5;">
+                    <div class="portalRik" style="--i:5;"><img src="img/icons_geroes/morty.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:6;">
+                    <div class="portalRik" style="--i:6;"><img src="img/icons_geroes/portal-gun.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:7;">
+                    <div class="portalRik" style="--i:7;"><img src="img/icons_geroes/gopa.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:8;">
+                    <div class="portalRik" style="--i:8;"><img src="img/icons_geroes/summer.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:9;">
+                    <div class="portalRik" style="--i:9;"><img src="img/icon-Rik.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:10;">
+                    <div class="portalRik" style="--i:10;"><img src="img/icons_geroes/morty.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:11;">
+                    <div class="portalRik" style="--i:11;"><img src="img/icons_geroes/bet.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:12;">
+                    <div class="portalRik" style="--i:12;"><img src="img/icons_geroes/summer.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:13;">
+                    <div class="portalRik" style="--i:13;"><img src="img/icons_geroes/morty.png"  alt=""></div>
+                </div>
+            </div>
+            -->
+            
+
+            <div class="main-list">
+                <div class="block-content reveal">
+                    <h1 id="1" class="h1-in-blocks">Основные персонажи</h1>
+                    <hr class="hr-double">
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="q">Диппер Пайнс</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493457659.jpg" alt="" >
+                            <p class="text_person"> <strong>Диппер Пайнс</strong>  - 12-летний мальчик, один из двух главных
+                                героев сериала. Является братом-близнецом Мэйбл, младше её на 5 минут. Вооружен дневником № 3,
+                                который случайно обнаружил в лесу во время выполнения одного из поручений двоюродного дедушки 
+                                Стэна. Это помогает ему разгадывать большое количество тайн Гравити Фолз. Не может оставаться 
+                                безучастным, всегда находится в поисках приключений и пытается раскрыть как можно больше секретов
+                                . Его внимание к деталям весьма полезно в решении загадок, но другие сомневаются в достоверности 
+                                его теорий из-за его одержимости заговорами. Он считается умным не по годам и желает поскорее стать
+                                взрослым. Целенаправленный, основывает свои предположения на фактах. Диппер часто придумывает
+                                всевозможные планы и составляет бесчисленные списки, что позволяет ему трезво относиться к
+                                опасностям городка, но иногда мешает в повседневной жизни. В межсезонье Диппер появляется в 
+                                телешоу под названием «Журнал Аномалий Диппера». Он получил свое имя от родимого пятна на лбу
+                                в виде Ковша Большой Медведицы. Практически всегда носит бело-голубую кепку с нарисованной елью,
+                                красную футболку, синюю жилетку, серые шорты и кеды. Во 2 серии 2 сезона выясняется,что на
+                                самом деле Венди знала, что Диппер по уши влюблён в неё, и признается, что с большим
+                                удовольствием стала бы встречаться с ним, но дело в том, что между ними разница возрасте — 3 года.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="w">Мэйбл Пайнс</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493457734.jpg" alt="" >
+                            <p class="text_person"> <strong>Мэйбл Пайнс</strong>  12-летняя девочка, сестра-близнец Диппера и 
+                                второй главный персонаж истории. Неисправимая оптимистка. Любит развлекаться и дурачиться. Имеет
+                                отличное чувство юмора и часто подшучивает над Диппером. Добрая и чуткая, несмотря на её
+                                несерьезность и легкомыслие. Может быть спокойной и рассудительной, если того требует ситуация.
+                                Вместе с Диппером участвует в приключениях. Неотъемлемая часть имиджа Мэйбл — разноцветные
+                                свитера и брекеты. У Мэйбл есть домашний поросёнок по имени Пухля. Её лучшие подруги — Кэнди и 
+                                Гренда. Очень влюбчива, в моменты своих увлеченностей может пойти на многое ради своих избранников.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="e">Стенли Пайнс</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493457839.jpg" alt="" >
+                            <p class="text_person"> <strong>Стенли Пайнс</strong> -  Двоюродный дедушка Диппера и Мэйбл, 
+                                которого они зовут дядей. Резок и эгоистичен. Он работает и живёт в Хижине Чудес, туристическом
+                                центре, который называет «самым причудливым музеем мира.» Дядя Стэн — прирожденный продавец,
+                                всегда пытается создать зрелищное шоу. Стремится заработать деньги любым способом — несмотря
+                                на законность методов. Когда он не работает, он, как правило, у себя дома, в основном смотрит
+                                телевизор. Стэн обычно носит феску (символ на феске был изменен в 14-м эпизоде первого сезона,
+                                возможно по цензурным соображениям), ходит с тростью, и иногда носит повязку поверх очков —
+                                как часть своего имиджа. Он часто посылает близнецов на то, что они считают возмутительным и 
+                                непредсказуемым поручением, но он защищает их и любит безоговорочно. Несмотря на свой возраст 
+                                и сомнительное телосложение, Стэн физически в состоянии дать отпор, когда под угрозой Диппер 
+                                и Мэйбл, даже зомби и птеродактилю. За его торговым автоматом есть тайный подвал-бункер, в 
+                                котором находится портал. В 20 серии 1
+                                сезона он открывает этот портал с помощью всех 3 дневников. В молодости любил девушку по имени Карла.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="r">Зус Рамирез</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493457690.jpg" alt="" >
+                            <p class="text_person"> <strong>Зус Рамирез</strong> -  2-летний мастер и постоянный сотрудник Хижины 
+                                Чудес, как и Венди. Друг Диппера и Мэйбл. Зус — очень добрый и милый человек, который хочет всегда
+                                быть в курсе событий. Он часто возит близнецов по городу на своём старом пикапе, если есть 
+                                необходимость. Он довольно неуклюж, и часто делает ошибки. Несмотря на это, он имеет широкий
+                                спектр талантов, в том числе машиностроения, диджеинга и пинбола. Ведёт своё теле-шоу под
+                                названием «Ремонт Зуса», где чинит те вещи, которые сломал кто-то в Хижине Чудес (например, 
+                                часы-кукушку или микроволновку для хот-догов). В 8 серии 2 сезона («Игра Блендина») был 
+                                установлен его день рождения: 13 июля. Живет с бабушкой, т. к. его отец не посещал Зуса с момента
+                                его 12-го дня рождения, лишь присылая открытки. Обожает компьютерные игры и все, что с ними связано.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="t">Венди Кордрой</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493457611.jpg" alt="" >
+                            <p class="text_person"> <strong>Саммер Смит</strong> -  Добрая и крутая 15-летняя девушка, которая
+                                работает в Хижине Чудес. Дружит с Диппером, Мэйбл и Зусом. Относится к Дипперу как к другу, в
+                                то время же зная, что он в неё влюблён. Венди признавалась, что у неё было много парней в
+                                прошлом — так много, на самом деле, что она не может вспомнить всех. Венди старшая из всех
+                                детей в её семье и самая высокая. Её отец — Дровосек Дэн, один из местных лесорубов Гравити
+                                Фолз. Она типичный общительный и беспечный подросток, у неё много подруг её возраста. Её
+                                последний бойфренд — Робби, с которым Диппер соперничал и дрался. Прекрасно управляется с топором.                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block-content reveal">
+                    <h1 id="2" class="h1-in-blocks" id="y">Второстепенные персонажи</h1>
+                    <hr class="hr-double">
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks">Билл Шифр</h3>
+                        <div class="block-person">
+                            <img src="https://i.gifer.com/OZlE.gif" style="width: 200px; height: 200px; " alt="" >
+                            <p class="text_person"> <strong>Билл Шифр</strong> -  Демон, главный антагонист сериала. Внешне похож
+                                на символ иллюминатов (треугольник с глазом в центре). Способен проникать в чужой разум и
+                                управлять другими людьми, как марионетками. Хочет уничтожить дневники тайн Гравити Фолз. Знает
+                                всё в Гравити Фолз, и имеет давнее знакомство со Стэнфордом Пайнсом. Имеет много мистических 
+                                способностей, большинство из которых работает только после заключения сделки
+                                с кем-либо. Постоянно следит за событиями городка и его жителями, в частности, главными героями. </p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="u">Боби Блапс</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493458361.jpg"  alt="" >
+                            <p class="text_person"> <strong>Боби Блапс</strong> - местный и причём главный шериф Гравити Фолс.
+                                Довольно толстый. Афроамериканец. Почти всегда носит рабочую 
+                                полицейскую форму, а также чёрные солнечные очки. У сержанта Бласа есть помощник практикант Дурлант. </p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="i">Гидеон Глифул</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493458938.jpg"  alt="" >
+                            <p class="text_person"> <strong>Гидеон Глифул</strong> - один из антагонистов сериала.
+                                Девятилетний мальчик, пользующийся своим возрастом и своеобразным шармом для достижения целей.
+                                Считается в некотором роде телепатом. Родители его очень боятся и всегда
+                                слушаются. Заклятый враг
+                                семьи Пайнсов (кроме Мэйбл, так как влюблен в неё), претендующий на владение 
+                                их «Хижиной Чудес». </p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="o">Гренда Грендинатор</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493459214.jpg" alt="" >
+                            <p class="text_person"> <strong>Гренда Грендинатор</strong> -  большая и неуклюжая девочка 
+                                лет 13-14. Обладает глубоким голосом, благодаря которому многие считают её 
+                                мальчиком. Немного глуповата. Дружелюбная и жизнерадостная девчонка с необычными взглядами на жизнь.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="p">Кэнди Чиу</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493460624.jpg"  alt="" >
+                            <p class="text_person"> <strong>Кэнди Чиу</strong> -  Маленькая сутулая 12-летняя девочка, подруга
+                                Гренды и Мэйбл. Носит круглые очки в пол лица. Волосы чёрные, чаще всего 
+                                забраны. Очень добрая, милая, и наивная, поэтому все время делает всяческие глупости и нелепости.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="a">Пасифика Нортвест</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/98-1493459684.jpg"  alt="" >
+                            <p class="text_person"> <strong>Пасифика Нортвест</strong> -  12-летняя девочка, ровесница Диппера и 
+                                Мэйбл. Блондинка, часто носит макияж. Избалованная, эгоистичная, по-своему целеустремленная особа, 
+                                однако в третьей серии второго сезона раскрывается телезрителям с другой стороны. Предпочтительные 
+                                цвета в одежде — сиреневый и розовый. Является самой богатой и популярной девочкой во всём Гравити
+                                Фолз. Её предку-мошеннику издавна присвоено звание основателя городка. Живёт вместе с семьёй в 
+                                огромном старинном особняке. Её папа — Престон Нортвест, а мама — Дженетт Нортвест. 
+                                Боится разочаровать своих родителей, поэтому делает всё по их приказу. Прекрасно играет в гольф.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" >Прочие</h3>
+                        <div class="block-person">
+                            <img src="https://sun9-57.userapi.com/impf/c624227/v624227063/51765/JYHsOB4sotk.jpg?size=453x604&quality=96&sign=4f26ab431a9da9b7e1604306049e0899&type=album" width="200px" alt="" >
+                            <p class="text_person"> <strong>Прочие персонажи</strong> еще будут добавлять в течении редактирования страницы. 
+                                Скоро туту будет все больше и больше героев мультсериала!!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block-content reveal">
+                    <h1 id="3" class="h1-in-blocks">Объекты</h1>
+                    <hr class="hr-double">
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks " id="v">Вселенский портал</h3>
+                        <div class="block-person">
+                            <img src="https://i.pinimg.com/236x/a2/16/de/a216de59d3786a50181ea88264eea2d4.jpg"  alt="ы" >
+                            <p class="text_person"> Исследуя Гравити Фолз, Форд хотел понять откуда берутся все аномалии, но 
+                                никак не мог это сделать, пока к нему не явился Билл Шифр и не преподнёс ему идею портала, а также 
+                                не помог разработать соответствующие чертежи. Доверившись Биллу, Форд решил его построить, так как 
+                                предполагал, что аномалии появляются из другого измерения. В постройке портала ему помогал его друг 
+                                из университета — Фиддлфорд Макгакет. Вместе они использовали материалы и технологии инопланетного 
+                                корабля, что и сейчас покоится вблизи города. Форд считал, что построив портал он сможет преодолеть слабое 
+                                место в ткани измерения и получить доказательства существования измерения по ту сторону преграды.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="d">Питт Кола</h3>
+                        <div class="block-person">
+                            <img src="https://sun9-16.userapi.com/s/v1/if1/9xfCcNsJwpUx_mYIEdwAz2ZwuuaZUZlthf7jzs2QWq7eF2b6ZrqtkdlcHkxBbTc-2LLHvg.jpg?size=100x100&quality=96&crop=148,31,384,384&ava=1"  alt="ы" >
+                            <p class="text_person"> <strong>Питт Кола</strong> - популярный газированный напиток в Гравити Фолз. Его часто пьют Стэн, Диппер и другие персонажи, а пустые баночки 
+                                от напитка можно видеть везде в Хижине Чудес. Один из рекламных лозунгов Питт Колы: «Это Питтс!». 
+                                Питт Кола продаётся в торговых автоматах, как тот, что стоит рядом с входом в Хижину Чудес, также 
+                                поставляется в двухлитровых бутылках. Она так называется, потому что 
+                                внутри её есть настоящая персиковая косточка. Питт Кола также доступна в диетической версии. </p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="f">Дневник № 3 </h3>
+                        <div class="block-person">
+                            <img src="https://tipik.ru/wp-content/uploads/2019/10/Обложка-дневника-диппера-картинки-009-225x300.jpg"  alt="ы" >
+                            <p class="text_person"> <strong>Дневник № 3 </strong> -  загадочная книга, найденная Диппером 
+                                Пайнсом в лесу на окраине от Гравити Фолз. Это третья и финальная часть серии дневников 
+                                Автора. Является продолжением первого и второго дневников. Там содержится информация о 
+                                странных и загадочных явлениях в Гравити Фолз. Считалось, что он был уничтожен Биллом Шифром 
+                                наряду с Дневником № 1 и № 2 во время Странногеддона, но после 
+                                смерти Билла они были, по всей видимости, восстановлены, и вскоре их выбросили в бездонную яму.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                <div class="panel right">
+                <div class="ch" style="--i:1;">
+                    <div class="portalRik" style="--i:1;"><img src="img/panel-Rik/Dog_Rik.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:2;">
+                    <div class="portalRik b" style="--i:2;"><img src="img/panel-Rik/Portal_gun_Rik.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:3;">
+                    <div class="portalRik c" style="--i:3;"><img src="img/panel-Rik/potato.png" style="filter: brightness(0.8);" alt=""></div>
+                </div>
+                <div class="ch" style="--i:4;">
+                    <div class="portalRik" style="--i:4;"><img src="img/panel-Rik/Ogyrchik.png" style="width: 100px; height: 100px;"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:5;">
+                    <div class="portalRik" style="--i:5;"><img src="img/icons_geroes/summer.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:6;">
+                    <div class="portalRik" style="--i:6;"><img src="img/icons_geroes/portal-gun.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:7;">
+                    <div class="portalRik" style="--i:7;"><img src="img/icons_geroes/gopa.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:8;">
+                    <div class="portalRik" style="--i:8;"><img  src="img/panel-Rik/Ogyrchik.png" style="width: 100px; height: 100px;"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:9;">
+                    <div class="portalRik" style="--i:9;"><img src="img/panel-Rik/Dog_Rik.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:10;">
+                    <div class="portalRik" style="--i:10;"><img src="img/icons_geroes/bet.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:11;">
+                    <div class="portalRik" style="--i:11;"><img  src="img/panel-Rik/Ogyrchik.png" style="width: 100px; height: 100px;"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:12;">
+                    <div class="portalRik" style="--i:12;"><img src="img/icons_geroes/gopa.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:13;">
+                    <div class="portalRik" style="--i:13;"><img src="img/icons_geroes/portal-gun.png"  alt=""></div>
+                </div>
+
+            -->
+           
+            </div>
+
+
+        </div>  
+        
+    </main>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+        
+            function reveal(){
+              var reveals = document.querySelectorAll('.reveal');
+        
+              for(var i = 0; i < reveals.length; i++){
+        
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+        
+                if(revealtop < windowheight - revealpoint){
+                  reveals[i].classList.add('active');
+                }
+                else{
+                  reveals[i].classList.remove('active');
+                }
+              }
+            }
+            </script>
+<script src="js/script.js"></script>
+</body>
+</html>

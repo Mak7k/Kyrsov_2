@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_Futurama.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Futurama</title>
+<style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-image: url(https://kartinkin.net/uploads/posts/2021-07/1625727571_60-kartinkin-com-p-futurama-oboi-krasivie-62.jpg);
+            background-position: left bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="full-screen" >
+            <div class="full-screen-body">
+                <div class="full-screen-title">
+                    ФУТУРАМА
+                </div>
+            </div>
+
+            <video autoplay muted loop preload="auto" class="full-screen-video">
+            <source type="video/mp4" src="video/videoplayback (2).mp4">
+            </video>
+        </div>
+    </header>
+
+
+    <nav >  
+        <img  src="https://www.userlogos.org/files/logos/macleod.mac/futurama.3.u.png" width="200" height="150"/>  
+        <input type="checkbox" name="menu" id="btn-menu" />
+        <label for="btn-menu"><strong>Меню</strong> </label> 
+        <ul>
+            <li> <a id="one" href="#1"><h3>Основные персонажи</h3> </a> </li>
+            <li> <a id="two" href="#2"><h3>Второстепенные персонажи</h3> </a> </li>
+            <li> <a id="tree" href="#3"><h3>Объекты</h3> </a> </li>
+            <li> <a id="tree" href="index.html"><h3>Главная</h3> </a> </li>
+            <li> <a id="tree" href="Galary_Futurama.html"><h3>Галарея</h3> </a> </li>
+            <li>
+                <div class="search">
+                    <input type="text" class="fild" id="inputSearch" placeholder="Поиск.." >
+                    <ul id="list">
+                            <li><a href="#q">Филип Джей Фрай</a></li>
+                            <li><a href="#w">Туранга Лила</a></li>
+                            <li><a href="#e">Профессор Хьюберт Фарнсворт</a></li>
+                            <li><a href="#r">Доктор Зойдберг</a></li>
+                            <li><a href="#t">Гермес Конрад</a></li>
+                            <li><a href="#y">Эми Вонг</a></li>
+                            <li><a href="#u">Зепп Бранниган</a></li>
+                            <li><a href="#i">Нибблер</a></li>
+                            <li><a href="#o">Калькулон</a></li>
+                            <li><a href="#p">Мамочка</a></li>
+                            <li><a href="#a">Робот-дьявол</a></li>
+                            <li><a href="#v">Робот Санта</a></li>
+                            <li><a href="#d">Слёрм</a></li>
+                            <li><a href="#f">Будка самоубийств</a></li>
+                            <li><a href="#g">Корабль <i>Planet Express</i> </a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main>
+        
+        
+
+
+
+        <div class="all_main">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!--
+                <div class="panel left">
+
+                <div class="ch" style="--i:1;">
+                    <div class="portalRik" style="--i:1;"><img src="img/Graviti_Folz/book-transformed.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:2;">
+                    <div class="portalRik b" style="--i:2;"><img src="img/Graviti_Folz/Dipper.png" style="width: 50%;height: 50%;" alt=""></div>
+                </div>
+                <div class="ch" style="--i:3;">
+                    <div class="portalRik c" style="--i:3;"><img src="img/Graviti_Folz/Maibl.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:4;">
+                    <div class="portalRik" style="--i:4;"><img src="img/icons_geroes/summer.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:5;">
+                    <div class="portalRik" style="--i:5;"><img src="img/icons_geroes/morty.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:6;">
+                    <div class="portalRik" style="--i:6;"><img src="img/icons_geroes/portal-gun.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:7;">
+                    <div class="portalRik" style="--i:7;"><img src="img/icons_geroes/gopa.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:8;">
+                    <div class="portalRik" style="--i:8;"><img src="img/icons_geroes/summer.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:9;">
+                    <div class="portalRik" style="--i:9;"><img src="img/icon-Rik.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:10;">
+                    <div class="portalRik" style="--i:10;"><img src="img/icons_geroes/morty.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:11;">
+                    <div class="portalRik" style="--i:11;"><img src="img/icons_geroes/bet.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:12;">
+                    <div class="portalRik" style="--i:12;"><img src="img/icons_geroes/summer.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:13;">
+                    <div class="portalRik" style="--i:13;"><img src="img/icons_geroes/morty.png"  alt=""></div>
+                </div>
+            </div>
+            -->
+            
+
+            <div class="main-list">
+                <div class="block-content reveal">
+                    <h1 id="1" class="h1-in-blocks">Основные персонажи</h1>
+                    <hr class="hr-double">
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="q">Филип Джей Фрай</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/381-1457463470.jpg" alt="" >
+                            <p class="text_person"> <strong>Филип Джей Фрай</strong>  - является главным героем сериала. 
+                                Он - разносчик пиццы 20-го века в Нью-Йорке, которого бросила его девушка и который застрял на 
+                                бесперспективной работе, был криогенно заморожен 31 декабря 1999 года, проснувшись 1000 лет 
+                                спустя незадолго до 3000 года. После встречи с Бендером и Лилой, трио находит работу в компании Planet Express delivery, принадлежащей дальнему потомку Фрая, 
+                                профессору Фарнсворту. По иронии судьбы, Фрай становится посыльным для <i>Planet Express</i>.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks"  id="w">Туранга Лила</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/381-1457463471.jpg" alt="" >
+                            <p class="text_person"> <strong>Туранга Лила</strong> -  главная женская роль сериала. Она - 
+                                одноглазый мутант, которого Фрай встречает после пробуждения через 1000 лет в будущем. 
+                                Первоначально Лила работала офицером по назначению для криоконсервированных людей, просыпающихся 
+                                в будущем, но после встречи с Фраем увольняется с работы и присоединяется к нему и Бендеру в 
+                                <i>Planet Express</i>, где становится капитаном корабля доставки. Она один из немногих персонажей в 
+                                актерском составе, который регулярно демонстрирует компетентность и способность командовать, 
+                                и регулярно спасает остальных актеров от катастрофы, но очень страдаетнеуверенностьсиротой, над 
+                                которой издевались. Сначала она считает себя инопланетянкой, но позже выясняется, что она мутант</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks"  id="e">Профессор Хьюберт Фарнсворт</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/381-1457463472.jpg" alt="" >
+                            <p class="text_person"> Профессор <strong> Хьюберт Фарнсворт</strong> -  является внучатым 
+                                племянником Фрая (X30) и внуком (X31) из-за парадокса рифа времени. Безумный ученый и владелец 
+                                <i>Planet Express</i>, он чередует интеллект и аморальный маразм из-за своего очень преклонного 
+                                возраста, о котором неоднократно заявляли, что ему по меньшей мере 150 лет (160 лет "Моему 
+                                собственному клону"). Он демонстрирует мастерство в любой области науки, необходимой для 
+                                сюжетов сериала, и считается одним из самых блестящих изобретателей на Земле. Тем не менее, 
+                                он постоянно засыпает, и предполагается, что он регулярно отправлял свои бывшие команды 
+                                на самоубийственные миссии. Он носит очень толстые очки и обладает даром создавать устройства 
+                                судного дня и атомных суперменов. Он поставил под угрозу 
+                                по крайней мере одну параллельную вселенную своими изобретениями и посетил еще десятки других.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks"  id="r">Доктор Зойдберг</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/381-1457463473.jpg" alt="" >
+                            <p class="text_person"> Доктор <strong>Зойдберг</strong> -  является штатным врачом для 
+                                <i>Planet Express</i> несмотря на его плохое понимание человеческого физиология и намеки на его 
+                                сомнительные полномочия. Он - десятиногий, ракообразное-как виды инопланетян. Его персонаж 
+                                пародирует предполагаемое богатство и автоматическое уважение современных врачей — например, 
+                                его некомпетентность в медицине делает его чрезвычайно бедным, несмотря на его профессию, и 
+                                подразумевается, что он часто бездомные когда не на работе. Десятиногий (названный в честь 
+                                фактического ДекаподаДесятиногие ракообразные отряда десятиногих) представляют собой расширенную 
+                                пародию на Идиш культура — самая большая шутка в том, что моллюски не являются кошерный.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks"  id="t">Гермес Конрад</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/381-1457463474.jpg" alt="" >
+                            <p class="text_person"> <strong>Гермес Конрад</strong> Бюрократ, бухгалтер компании 
+                                <i>Planet Express</i>, ямайского происхождения, в прошлом спортсмен в лимбо.                            </p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks"  id="y">Эми Вонг</h3>
+                        <div class="block-person">
+                            <img src="https://fanfics.me/images/fandoms_heroes/381-1457463475.jpg" alt="" >
+                            <p class="text_person"> <strong>Эми Вонг</strong> работает стажером в <i>Planet Express</i>, 
+                                предположительно, ее держат рядом, потому что у нее такая же группа крови, как у профессора 
+                                Фарнсворта, и она не замечает склонности профессора посылать свои команды на самоубийственные
+                                миссии. Ее характер на вечеринках и общая неуклюжесть приводят ее к неприятностям. 
+                                Она взбалмошная, избалованная дочь богатых родителей-фермеров-промышленников из Китая, 
+                                которые выращивают 
+                                буггало (гибрид "буйвола" и "жука") на своей территории, в западном полушарии планеты Марс.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block-content reveal">
+                    <h1 id="2" class="h1-in-blocks"  >Второстепенные персонажи</h1>
+                    <hr class="hr-double">
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="u">Зепп Бранниган</h3>
+                        <div class="block-person">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LAlGR3vZqvFxnmqjL4Bu6g8wg5r3zb-hRg&usqp=CAU"  alt="" >
+                            <p class="text_person"> <strong>Зепп Бранниган</strong> - 25-звездочный генерал вооруженных сил 
+                                Демократического ордена планет (D.O.O.P.), хотя его титул варьируется. Брэнниган впервые был 
+                                замечен в эпизоде "Любовные подвиги, затерянные в космосе" в роли капитана звездолета "Нимбус", 
+                                где он заключает в тюрьму Фрая, Лилу и Бендера за нарушение "Закона Браннигана".</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks"  id="i">Нибблер</h3>
+                        <div class="block-person">
+                            <img src="https://p.kindpng.com/picc/s/736-7360236_bender-futurama-fry-png-imag-transparent-png.png" width="150" height="160" alt="" >
+                            <p class="text_person"> <strong>Нибблер</strong> - является представителкм древнейшей расы, 
+                                которая на 17 лет 
+                                старше Вселенной. Раса приглядывает за Землёй.
+                                Зубастик может проникать в мозг людей, тем самым человек и зверь могут общаться.
+                                Представители расы Зубастика испражняются тёмной материей, что выгодно для компании, 
+                                по некоторым данным материя стоит 9,99$ за шарик. </p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks"  id="o">Калькулон</h3>
+                        <div class="block-person">
+                            <img src="https://www.vokrug.tv/pic/person/1/d/f/2/1df2a9c645273d8529c7a8ad595ae821.jpg"width="150" height="180"  alt="" >
+                            <p class="text_person"> <strong>Калькулон</strong> - действующий робот, известный своими 
+                                мелодраматическими ролями и драматическим стилем речи. Его самая известная роль - главный герой 
+                                в продолжительной мыльной опере о роботах "Все мои цепи". В "Руках дьявола - пустые игрушки" 
+                                утверждается, что Калькулон получил свои актерские способности от Робота-дьявола. 
+                                Калькулон из 21-го века, был создан как стандартный промышленный робот под названием Калькулон 1.0. </p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="p">Мамочка</h3>
+                        <div class="block-person">
+                            <img src="https://screenfiction.org/content/image/0/147/486/0fa1197a-regular.webp" alt="" >
+                            <p class="text_person"> <strong>Мамочка</strong> -  агрессивная, угрожающая и макиавеллианская 
+                                хулиганка, напоминающая Злую ведьму Запада.Она управляет и владеет 99,7% акций MomCorp, 
+                                крупного многомиллиардного промышленного комплекса с многочисленными филиалами и монополией 
+                                на производство роботов, а также является компанией, которая создала Bender. Публично она 
+                                сохраняет корпоративный имидж милой, суетливой старушки, которая часто превращается в стереотип 
+                                бабушки с Глубокого Юга; за кулисами она снимает 
+                                свой толстый костюм и предстает худой, как скелет, злобной и сквернословящей старой карги.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="a">Робот-дьявол</h3>
+                        <div class="block-person">
+                            <img src="https://i.pinimg.com/236x/df/31/4d/df314d17f02b41c1660c43dbbed1ea61--futurama-simpsons-los-simpsons.jpg" width="150px"  alt="" >
+                            <p class="text_person"> Задача <strong>Робота-дьявола</strong> - мучить роботов, которые совершили 
+                                различные грехи в рамках практики Роботологии. Если заключить сделку с Роботом-дьяволом, 
+                                он, по-видимому, обладает неограниченной властью и может выполнить практически любую просьбу. 
+                                Озвучка Робота-дьявола Дэном Кастелланетой была описана как "бравурное представление" с его 
+                                стороны. Робот-дьявол доступен в виде фигурки из первых трех серий фигурки Футурамы от Toynami.
+                                Впервые он появляется в фильме "Ад - это другие роботы", похищая Бендера и мучая его, пока Фраю и Лиле не удается спасти Бендера.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="v">Робот Санта</h3>
+                        <div class="block-person">
+                            <img src="https://sun9-44.userapi.com/impf/c623423/v623423161/f9f4/XFXA6oSTAbU.jpg?size=229x331&quality=96&sign=8c05dd9a3187950c9665b38104fde477&c_uniq_tag=J-ze-pPQV-avA2AYXcd1myIfjWYGYUHsrYlwyLRtO70&type=album" width="150px" alt="" >
+                            <p class="text_person"> <strong>Робот Санта</strong> -  робот, созданный в 2801 году компанией 
+                                Friendly Robot Company для оценки существ как непослушных или милых и раздачи подарков или 
+                                наказаний соответственно. Из-за ошибки в программировании его стандарты слишком высоки, и он 
+                                считает всех непослушными (за исключением доктора Зойдберга, который получил в 
+                                подарок Пого-стик). Это заставляет его совершать разрушительные набеги по всей Земле каждое 
+                                Рождество, используя оружие на рождественскую тематику, такое как гранаты в форме рождественских 
+                                украшений, велосипедные пистолеты и пусковые установки T.O.W. для наказания "непослушных" 
+                                существ. Он проживает в крепости смерти на Нептуне 
+                                вместе с несколькими нептунианцами, которые работают в качестве рабов на фабрике игрушек.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks">Прочие</h3>
+                        <div class="block-person">
+                            <img src="https://img.wallpapersafari.com/tablet/768/1024/59/36/XKUL3u.jpg" width="210px" alt="" >
+                            <p class="text_person"> <strong>Прочие персонажи</strong> еще будут добавлять в течении редактирования страницы. 
+                                Скоро туту будет все больше и больше героев мультсериала!!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block-content reveal">
+                    <h1 id="3" class="h1-in-blocks">Объекты</h1>
+                    <hr class="hr-double">
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="d">Слёрм</h3>
+                        <div class="block-person">
+                            <img src="https://sun9-80.userapi.com/c11394/g37704883/a_9b29f86d.jpg" width="150px" alt="ы" >
+                            <p class="text_person"> <strong>Слёрм</strong> - безалкогольный напиток зелёной консистенции. 
+                                Вызывает привыкание и выпадение зубов. Slurm проводит активную маркетинговую кампанию, похожую 
+                                на ведущие безалкогольные напитки сегодняшнего дня. Кампания была развернута Slurms McKenzie до 
+                                его трагической смерти. 
+                                В кампании используется инструментальная версия «Я получил загар» от The Four Postmen. 
+                                К этому напитку питает слабость Фрай. Его производит слёрм королева – червь с Планеты Червелон.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="f">Будка самоубийств</h3>
+                        <div class="block-person">
+                            <img src="https://dic.academic.ru/pictures/wiki/files/50/991318dd4d68c951057171bbf4eebe08.JPG" width="150px"  alt="ы" >
+                            <p class="text_person"> <strong>Будка самоубийств</strong> — это будки, которые можно 
+                                найти почти на каждой улице в 3000 году. Они примерно того же размера, что и телефонная будка. 
+                                Будка самоубийств дает квитанцию, несмотря на смерть человека. Самоубийство в будке самоубийства 
+                                обычно стоит 25 центов. Во время использования над 
+                                входом загорается оповещающая надпись. Будки демонстрируют легкое отношение к смерти в 31 веке.</p>
+                        </div>
+                    </div>
+
+                    <div class="person reveal">
+                        <h3 class="h2-in-blocks" id="g">Корабль <i>Planet Express </i> </h3>
+                        <div class="block-person">
+                            <img src="https://garagedreams.net/wp-content/uploads/2017/02/palent-express.jpg" style= width:220px;" alt="ы" >
+                            <p class="text_person"> <strong>Корабль <i> Planet Express</i> </strong> -  основной и единственный 
+                                корабль экспедиционной компании Planet Express. Корабль представляет собой помесь ракеты, 
+                                самолёта и стереотипного 
+                                космического корабля сине-зелёного цвета (цвет Электрослизь, со слов Туранги Лилы в эпизоде 
+                                "Игра Бендера"). Он имеет три крыла-обтекателя, а также три стояночных ноги, одна из которых — 
+                                лестница к основному входу. Корабль также имеет грузовой люк и погрузочный кран. Наверху имеется 
+                                турель и два торпедных люка для отражения возможных атак. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                 <div class="panel right">
+                <div class="ch" style="--i:1;">
+                    <div class="portalRik" style="--i:1;"><img src="img/panel-Rik/Dog_Rik.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:2;">
+                    <div class="portalRik b" style="--i:2;"><img src="img/panel-Rik/Portal_gun_Rik.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:3;">
+                    <div class="portalRik c" style="--i:3;"><img src="img/panel-Rik/potato.png" style="filter: brightness(0.8);" alt=""></div>
+                </div>
+                <div class="ch" style="--i:4;">
+                    <div class="portalRik" style="--i:4;"><img src="img/panel-Rik/Ogyrchik.png" style="width: 100px; height: 100px;"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:5;">
+                    <div class="portalRik" style="--i:5;"><img src="img/icons_geroes/summer.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:6;">
+                    <div class="portalRik" style="--i:6;"><img src="img/icons_geroes/portal-gun.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:7;">
+                    <div class="portalRik" style="--i:7;"><img src="img/icons_geroes/gopa.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:8;">
+                    <div class="portalRik" style="--i:8;"><img  src="img/panel-Rik/Ogyrchik.png" style="width: 100px; height: 100px;"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:9;">
+                    <div class="portalRik" style="--i:9;"><img src="img/panel-Rik/Dog_Rik.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:10;">
+                    <div class="portalRik" style="--i:10;"><img src="img/icons_geroes/bet.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:11;">
+                    <div class="portalRik" style="--i:11;"><img  src="img/panel-Rik/Ogyrchik.png" style="width: 100px; height: 100px;"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:12;">
+                    <div class="portalRik" style="--i:12;"><img src="img/icons_geroes/gopa.png"  alt=""></div>
+                </div>
+                <div class="ch" style="--i:13;">
+                    <div class="portalRik" style="--i:13;"><img src="img/icons_geroes/portal-gun.png"  alt=""></div>
+                </div>
+
+            -->
+           
+            </div>
+
+
+        </div>  
+    </main>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+    
+          for(var i = 0; i < reveals.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+    
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+        </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

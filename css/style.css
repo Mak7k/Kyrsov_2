@@ -1,0 +1,138 @@
+body{
+    background: radial-gradient(#073980, #000000);
+    margin: auto;
+}
+
+
+.image-list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    vertical-align: middle;
+}
+main{
+    top: 50%;
+    bottom: 50%;
+    
+}
+
+
+/*
+main {
+    position: relative;
+}
+.image-list {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+*/
+
+
+
+.pic{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.pic:hover{
+    transform: scale(1);
+    box-shadow: 0px 0px ;
+}
+
+.image-list:hover > .pic:not(:hover){
+    filter:  saturate(1.4) contrast(0.85) blur(10px);
+}
+
+.a{
+    box-shadow: -20px 20px rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+}
+
+.b{
+    box-shadow: 0px 20px rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+}
+
+.c{
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+
+
+html {
+    height:100%;
+}
+ 
+body {
+    margin:0;
+}
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #B84144 50%, #C3C047 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+@keyframes slide {
+    0% {
+    transform:translateX(-25%);
+    }
+    100% {
+    transform:translateX(25%);
+    }
+}
+
+@media (max-width: 524px) {
+    .pic a img{
+        width: 350px;
+    }
+}
+@media (max-width: 342px) {
+    .pic a img{
+        width: 250px;
+    }
+}
+@media (max-width: 234px) {
+    .pic a img{
+        width: 190px;
+    }
+}
+@media (max-width: 172px) {
+    .pic a img{
+        width: 140px;
+    }
+}
+@media (max-width: 126px) {
+    .pic a img{
+        width: 100px;
+    }
+}
+
+
+
+
+
